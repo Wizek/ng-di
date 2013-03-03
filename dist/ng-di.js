@@ -1852,6 +1852,9 @@
    * from publishExternalApis.js
    */
   publishExternalAPI(window[nameToExport]);
+  // TODO find a better solution instead of this quick hack below
+  extend(window, window.di)
+  delete window.di
 
 
 
